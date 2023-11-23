@@ -1,4 +1,4 @@
-name: GitHub-Profile-3D-Contrib
+name: github-data
 
 on:
   schedule: # 03:00 JST == 18:00 UTC
@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  graphs:
     runs-on: ubuntu-latest
-    name: generate-github-profile-3d-contrib
+    name: graphs
     steps:
       - uses: actions/checkout@v3
       - uses: yoshi389111/github-profile-3d-contrib@0.7.1
@@ -22,3 +22,13 @@ jobs:
           git add -A .
           git commit -m "generated"
           git push
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+    - name: metrics
+      uses: lowlighter/metrics@latest
+      with:
+        filename: metrics.classic.svg
+        token: ${{ secrets.METRICS_TOKEN }}
+        base: header, repositories
+        plugin_lines: yes
