@@ -1,29 +1,37 @@
-<h1 style="
-        text-align: center;
-        background-image: linear-gradient(to right, #84fab0, #8fd3f4);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        animation: colorChange 8s linear infinite;
-        background-size: 100% auto;
-        @keyframes colorChange {
-            0% { background-image: linear-gradient(to right, #84fab0, #8fd3f4); }
-            25% { background-image: linear-gradient(to right, #fa709a, #fee140); }
-            50% { background-image: linear-gradient(to right, #f6d365, #fda085); }
-            75% { background-image: linear-gradient(to right, #96e6a1, #d4fc79); }
-            100% { background-image: linear-gradient(to right, #84fab0, #8fd3f4); }
-        }">Hi, I'm Andrew Gigena</h1>
+<svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        .container h1 span:before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            left: 0;
+            height: 3px;
+            border-radius: 2px;
+            background: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+        }
+      </style>
+
+      <div class="container">
+        <h1>Hi, I'm Andrew Gigena</h1>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
+
 <h3 align="center">A backend developer from Montevideo, Uruguay!</h3>
 
-<h3 align="center">Connect with me:</h3>
-<p align="center">
+
+<h3 align="left">Connect with me:</h3>
+<p align="left">
 <a href="mailto:work@andrewgigena.dev" target="_blank"> <img align="center" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="andrew gigena mail" height="30" width="40" /></a>
 <a href="https://www.linkedin.com/in/andrewgigena/" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="andrew gigena linkedin" height="30" width="40" /></a>
 </p>
 
-<h3 align="center">I am experienced with the following technologies:</h3>
-
-<p align="center">
+<h3 align="left">I have various degrees of experience on the following technologies:</h3>
+<p align="left">
     <!-- Programming languages -->
     <a href="https://www.python.org/" target="_blank" rel="noreferrer">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" height="40"/>
